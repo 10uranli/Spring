@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="withCollectionId" class="ListWithXml.Person">
+		<property name="list">
+			<list>
+				<value>listValue1</value>
+				<value>listValue2</value>
+				<value>listValue3</value>
+			</list>
+
+		</property>
+
+		<property name="set">
+			<set>
+				<value>setValue1</value>
+				<value>setValue2</value>
+				<value>setValue3</value>
+			</set>
+
+		</property>
+		<property name="map">
+			<map>
+				<entry key="key1">
+					<value>mapValue1</value>
+				</entry>
+				<entry key="key2">
+					<value>mapValue2</value>
+				</entry>
+				<entry key="key3">
+					<value>mapValue3</value>
+				</entry>
+			</map>
+		</property>
+		<property name="listCar">
+			<list>
+				<bean id="car1" class="ListWithXml.Car">
+					<property name="model" value="Bmw"></property>
+				</bean>
+				<bean id="car2" class="ListWithXml.Car">
+					<property name="model" value="Audi"></property>
+				</bean>
+			</list>
+		</property>
+		<property name="pro">
+			<props>
+				<prop key="pro1">value1</prop>
+				<prop key="pro2">value2</prop>
+				<prop key="pro3">value3</prop>
+				<prop key="pro4">value4</prop>
+			</props>
+
+		</property>
+
+	</bean>
+
+
+</beans>

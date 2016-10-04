@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="personId" class="spring.Person">
+		<property name="name" value="Onur"/>
+		<property name="surname" value="Anli"/>
+		<property name="age" value="23"/>
+	</bean>
+	
+<!-- 	xmlns:p="http://www.springframework.org/schema/p" bunu ekleyerek ikinci bir ekleme secenegımız olusur.-->
+<!-- <bean  id="personId" class="spring.Person"  p:name = "onur" p:surname = "anli" p:age = "23"> </bean> -->
+
+
+</beans>
